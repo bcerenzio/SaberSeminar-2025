@@ -125,7 +125,3 @@ tranverse_spin_fun <- function(vavg, lift_coef){
   
   return(spin_t)
 }
-
-spin_efficiency_fun <- function(spin_t, spin_efficiency){
-  return(spin_t/spin_efficiency)
-}
