@@ -26,8 +26,8 @@ get_mlb_statsapi_pbp <- function(game_pk) {
   library(tidyverse)
   conn <- DBI::dbConnect(
     RMySQL::MySQL(),
-    user = 'root',
-    password = 'Be@m13G!rl',
+    user = Sys.getenv('sql_username'),
+    password = Sys.getenv('sql_password'),
     host = 'localhost',
     dbname = 'statcast_pbp'
   )
